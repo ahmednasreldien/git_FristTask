@@ -50,19 +50,19 @@ class Car{
 class Calculator{
   Calculator();
   int add(int num1,int num2){
-    print("the results of add  ${num1+num2}");
+    print("the results of add $num1 + $num2 = ${num1+num2}");
     return(num1+num2);
   }
   int sub(int num1,int num2){
-     print("the results of sun ${num1-num2}");
+     print("the results of sub $num1 - $num2 = ${num1-num2}");
     return(num1-num2);
   }
   int mul (int num1 , int num2){
-     print("the results of mul  ${num1*num2}");
+     print("the results of mul $num1 * $num2 = ${num1*num2}");
     return(num1*num2);
   }
   int div(int num1 ,int num2){
-     print("the results of div  ${num1/num2}");
+     print("the results of div $num1 / $num2 = ${num1/num2}");
   
     return(num1~/num2);
   }
