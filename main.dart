@@ -1,4 +1,5 @@
  
+
 import 'dart:io';
 
 
@@ -7,15 +8,17 @@ Calculator cal=Calculator();
     print("Welcome in my simple Calculator");
     var check=0;
     while (check==0) {
+
     print("Plesae Enter the frist Num1");
     int?num1=int.parse(stdin.readLineSync()!);
-    print(num1);
+    
     print("enter your operation + , - , / , *");
 
     String? operation= stdin.readLineSync();
     while(operation!="+"&& operation!="-"&& operation!="/"&& operation!="*")
     {
       print("please enter the right operation");
+      operation=stdin.readLineSync();
     }
     print("Please enter the secend num2");
     int?num2=int.parse(stdin.readLineSync()!);
@@ -46,10 +49,21 @@ class Car{
 }
 class Calculator{
   Calculator();
-  int add(int num1,int num2)=>num1+num2;
-  int sub(int num1,int num2)=>num1-num2;
-  int mul (int num1 , int num2)=>num1*num2;
+  int add(int num1,int num2){
+    print("the results of add  ${num1+num2}");
+    return(num1+num2);
+  }
+  int sub(int num1,int num2){
+     print("the results of sun ${num1-num2}");
+    return(num1-num2);
+  }
+  int mul (int num1 , int num2){
+     print("the results of mul  ${num1*num2}");
+    return(num1*num2);
+  }
   int div(int num1 ,int num2){
+     print("the results of div  ${num1/num2}");
+  
     return(num1~/num2);
   }
 }
