@@ -13,7 +13,7 @@ Calculator cal=Calculator();
     print("enter your operation + , - , / , *");
 
     String? operation= stdin.readLineSync();
-    while(operation!="+"&& operation=="-"&& operation=="/"&& operation=="*")
+    while(operation!="+"&& operation!="-"&& operation!="/"&& operation!="*")
     {
       print("please enter the right operation");
     }
